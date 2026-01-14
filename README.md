@@ -32,7 +32,7 @@ CROP expects a `.csv` file containing at least two columns: `Target sequence` an
 To run CROP run:
 
 ```bash
-docker run --gpus all \
+docker run --rm --gpus all \
   --name CROP \
   --ipc=host \
   --ulimit memlock=-1 \
@@ -53,7 +53,7 @@ CROP creates a folder results/folder_name and generates a summary of frameshift 
 To run the model using specific configuration that we used for benchmarking against state-of-the-art models in Figure 3, run:
 
 ```bash
-docker run --gpus all \
+docker run --rm --gpus all \
   --name CROP \
   --ipc=host \
   --ulimit memlock=-1 \
