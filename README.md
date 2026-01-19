@@ -1,6 +1,6 @@
 # CROP
 
-A method to accurately predict frameshift-rate (FSR) following a CRISPR-mediated double-strand break (DSB), first proposed in the paper *CROP: A feature-independent context-aware model for CRISPR-Cas9 frameshift prediction*.
+A method to accurately predict frameshift-rate (FSR) following a CRISPR-mediated double-strand break (DSB), first proposed in the paper *CROP: A feature-independent context-aware method for CRISPR-Cas9 frameshift prediction*.
 
 
 
