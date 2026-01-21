@@ -17,7 +17,7 @@ A method to accurately predict frameshift-rate (FSR) following a CRISPR-mediated
 
 ## Introduction
 
-CROP is the first end-to-end architecture for CRISPR-Cas9 repair-outcome prediction that learns biological repair logic directly from target sequences across multiple datasets simultaneously. CROP's output is the shift in sequence length following the repair (Δlength).
+CROP is the first end-to-end architecture for CRISPR-Cas9 repair-outcome prediction that learns biological repair logic directly from target sequences across multiple datasets simultaneously. CROP's output is the distribution of shifts in sequence length following the repair (Δlength), and the frameshift-rate.
 
 
 ## Getting Started
