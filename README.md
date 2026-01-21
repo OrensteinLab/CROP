@@ -7,7 +7,8 @@ A method to accurately predict frameshift-rate (FSR) following a CRISPR-mediated
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
 - [Usage](#usage)
   - [Predicting with CROP](#predicting-with-crop)
   - [Comparing Against State of the Art Models](#comparing-against-state-of-the-art-models)
@@ -18,12 +19,14 @@ A method to accurately predict frameshift-rate (FSR) following a CRISPR-mediated
 CROP is the first end-to-end architecture for CRISPR-Cas9 repair-outcome prediction that learns biological repair logic directly from target sequences across multiple datasets simultaneously. CROP's output is the shift in sequence length following the repair (Δlength).
 
 
-## Prerequisites
+## Getting Started
 
-To run CROP with GPU support, ensure you have:
+CROP can be run using Docker. While an NVIDIA GPU is recommended for faster performance, CROP will also run on a standard CPU.
 
-* **NVIDIA GPU** with compatible drivers.
-* **Docker** installed with the NVIDIA Container Toolkit.
+### Prerequisites
+
+* **Docker** installed on your system.
+* **(Optional) For GPU Support:** An NVIDIA GPU with compatible drivers and the NVIDIA Container Toolkit installed.
 
 ## Usage
 
