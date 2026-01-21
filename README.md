@@ -32,7 +32,9 @@ To run CROP with GPU support, ensure you have:
 CROP expects a `.csv` file containing at least two columns: `Target sequence` and `PAM position`. A sample file `sample.csv` which contains 1,000 samples from the FORECasT K562 dataset [[Allen et al. 2019]](https://www.nature.com/articles/nbt.4317) is provided for testing.
 
 To run CROP run:
-
+<details>
+<summary><b>Linux / macOS (Bash)</b></summary>
+  
 ```bash
 docker run --rm --gpus all \
   --name CROP \
@@ -44,6 +46,22 @@ docker run --rm --gpus all \
   nvcr.io/nvidia/tensorflow:24.06-tf2-py3 \
   python3 CROP.py sample.csv folder_name
 ```
+</details>
+<details> <summary><b>Windows (PowerShell)</b></summary>
+  
+```powershell
+docker run --rm --gpus all `
+  --name CROP `
+  --ipc=host `
+  --ulimit memlock=-1 `
+  --ulimit stack=67108864 `
+  -v ${PWD}:/workspace `
+  -w /workspace `
+  nvcr.io/nvidia/tensorflow:24.06-tf2-py3 `
+  python3 CROP.py sample.csv folder_name
+```
+</details>
+
 
 CROP creates a folder results/folder_name and generates a summary of frameshift rates and detailed Δlength files for each cellular-context it was trained on.
 
@@ -54,6 +72,9 @@ CROP creates a folder results/folder_name and generates a summary of frameshift 
 
 To run the model using specific configuration that we used for benchmarking against state-of-the-art models in Figure 3, run:
 
+<details>
+<summary><b>Linux / macOS (Bash)</b></summary>
+  
 ```bash
 docker run --rm --gpus all \
   --name CROP \
@@ -65,6 +86,22 @@ docker run --rm --gpus all \
   nvcr.io/nvidia/tensorflow:24.06-tf2-py3 \
   python3 CROP.py sample.csv folder_name -vs_sota_model
 ```
+</details>
+<details> <summary><b>Windows (PowerShell)</b></summary>
+  
+```powershell
+docker run --rm --gpus all `
+  --name CROP `
+  --ipc=host `
+  --ulimit memlock=-1 `
+  --ulimit stack=67108864 `
+  -v ${PWD}:/workspace `
+  -w /workspace `
+  nvcr.io/nvidia/tensorflow:24.06-tf2-py3 `
+  python3 CROP.py sample.csv folder_name -vs_sota_model
+```
+</details>
+
 Note, we expect the base model to perform better than this, since this one was trained on less sequences and does not predict for the SPROUT dataset.
 
 ## Model Training Data 
