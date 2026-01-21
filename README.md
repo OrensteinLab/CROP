@@ -27,7 +27,9 @@ To run CROP with GPU support, ensure you have:
 
 ## Usage
 
-CROP expects a `.csv` file containing at least two columns: `Target sequence` and `PAM position`. A `sample.csv` which contains 1,000 samples from the FORECasT K562 dataset is provided for testing.
+### Predicting with CROP
+
+CROP expects a `.csv` file containing at least two columns: `Target sequence` and `PAM position`. A sample file `sample.csv` which contains 1,000 samples from the FORECasT K562 dataset [[Allen et al. 2019]](https://www.nature.com/articles/nbt.4317) is provided for testing.
 
 To run CROP run:
 
@@ -43,7 +45,7 @@ docker run --rm --gpus all \
   python3 CROP.py sample.csv folder_name
 ```
 
-CROP creates a folder results/folder_name and generates a summary of frameshift rates and detailed Δlength files for each specific model.
+CROP creates a folder results/folder_name and generates a summary of frameshift rates and detailed Δlength files for each cellular-context it was trained on.
 
 
 ---
