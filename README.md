@@ -35,7 +35,7 @@ CROP can be run using Docker. While an NVIDIA GPU is recommended for faster perf
 
 CROP expects a `.csv` file containing at least two columns: `Target sequence` and `PAM position`. A sample file `sample.csv` which contains 1,000 samples from the FORECasT K562 dataset [[Allen et al. 2019]](https://www.nature.com/articles/nbt.4317) is provided for testing.
 
-To run CROP run:
+To predict with CROP run:
 <details>
 <summary><b>Linux / macOS (Bash)</b></summary>
   
@@ -74,7 +74,7 @@ CROP creates a folder results/folder_name and generates a summary of frameshift 
 
 ### Comparing Against State of the Art Models
 
-To run the model using specific configuration that we used for benchmarking against state-of-the-art models in Figure 3, run:
+To predict using the model that we used for benchmarking against state-of-the-art models in Figure 3, run:
 
 <details>
 <summary><b>Linux / macOS (Bash)</b></summary>
