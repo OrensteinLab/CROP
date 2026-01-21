@@ -12,6 +12,7 @@ A method to accurately predict frameshift-rate (FSR) following a CRISPR-mediated
 - [Usage](#usage)
   - [Predicting with CROP](#predicting-with-crop)
   - [Comparing Against State of the Art Models](#comparing-against-state-of-the-art-models)
+- [Model Training Data](#model-training-data)
 - [Contact](#contact)
 
 ## Introduction
