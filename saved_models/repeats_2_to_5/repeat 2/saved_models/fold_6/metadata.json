@@ -1,0 +1,36 @@
+{
+    "dataset_names": {
+        "0": "FORECasT K562",
+        "1": "FORECasT mESC",
+        "2": "FORECasT BOB",
+        "3": "FORECasT CHO",
+        "4": "FORECasT HAP1",
+        "5": "FORECasT RPE1",
+        "6": "FORECasT TREX2",
+        "7": "FORECasT 2A TREX2",
+        "8": "FORECasT eCAS9",
+        "9": "SPROUT T",
+        "10": "Aldit K562",
+        "11": "Aldit Jurkat",
+        "12": "Aldit HAP1",
+        "13": "Aldit K562 DNTTOE",
+        "14": "Aldit Jurkat DNTTKO",
+        "15": "InDelphi mESC",
+        "16": "InDelphi mESC NHEJdeficient",
+        "17": "InDelphi U2OS"
+    },
+    "MODEL_CONFIG": {
+        "n_datasets": 18,
+        "use_mh": true,
+        "d_model": 128,
+        "n_attention_layers": 3,
+        "n_attention_heads": 4,
+        "dropout_rate": 0.05,
+        "use_weird_rope": false,
+        "add_to_embedding": true,
+        "add_ds_embedding": true
+    },
+    "MIN_DELTA": -99,
+    "MAX_DELTA": 88,
+    "DELTA_OFFSET": 99
+}
