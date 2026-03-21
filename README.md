@@ -67,7 +67,7 @@ docker run --rm --gpus all `
 </details>
 
 
-CROP creates a folder results/folder_name and generates a summary of frameshift rates and detailed Δlength files for each cellular-context it was trained on.
+CROP creates a folder `results/folder_name` and generates a summary of frameshift rates and detailed Δlength files for each cellular-context it was trained on.
 
 
 ---
