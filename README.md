@@ -106,7 +106,7 @@ docker run --rm --gpus all `
 ```
 </details>
 
-Note, we expect the base model to perform better than this, since this one was trained on less sequences and does not generate predictions based on the SPROUT dataset. For simplicity, the script uses the model created from the first repeat, as from our experience, CROP achieved almost identical results on most datasets. The models for repeats 2-5 are stored in `saved_models/repeats_2_to_5/`.
+Note, we expect the base model to perform better than this, since this one was trained on less sequences and does not generate predictions based on the SPROUT dataset. For simplicity, the script uses the model created from the first repeat, as from our experience, CROP achieved almost identical results on most datasets. The models for repeats 2-5 are stored in `saved_models_vs_sota/repeats_2_to_5/`.
 
 ## Model Training Data 
 CROP was trained in 18 datasets (17 for the comparison vs SOTA version) described in the main paper. All datasets used in the paper including those used for training the model and test splits are archived on Figshare at https://doi.org/10.6084/m9.figshare.30998056.
